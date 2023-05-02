@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/app.ts | pino-pretty",
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
     "prettier": "prettier --write \"src/**/*.ts\""
   },
   "dependencies": {
