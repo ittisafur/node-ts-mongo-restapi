@@ -15,15 +15,7 @@ export async function createSession(userId: string, userAgent: string) {
 }
 
 export async function findSessions(query: FilterQuery<SessionDocument>) {
-  //   const currentSession = Session.find(
-  //    {
-  //     user: '644a49f0218d17cafdabdb57',
-  //     valid: true
-  //   }
-  // ).lean(); 
-  
     const currentSession = Session.find(query).lean();
-    // console.log({currentSession});
     return currentSession;
 }
 
